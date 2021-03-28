@@ -1,0 +1,17 @@
+.button {
+  font-size: 45px;
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  color: white;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.button.operator {
+  background-color: darkslategrey;
+  font-size: 45px;
+}
