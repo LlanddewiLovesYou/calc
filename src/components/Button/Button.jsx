@@ -9,7 +9,7 @@ export const Button = ({ value, className }) => {
       ? () => setDisplayReadOut("")
       : () => setDisplayReadOut(displayReadOut + value);
   return (
-    <div className={className} onClick={onClick}>
+    <div data-testid="test-button" className={className} onClick={onClick}>
       {value}
     </div>
   );

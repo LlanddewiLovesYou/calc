@@ -4,19 +4,19 @@ export class Calculator {
     this.operators = [];
     this.answer = 0;
   }
-  add(a, b) {
+  _add(a, b) {
     return a + b;
   }
 
-  sub(a, b) {
+  _sub(a, b) {
     return a - b;
   }
 
-  mul(a, b) {
+  _mul(a, b) {
     return a * b;
   }
 
-  div(a, b) {
+  _div(a, b) {
     return a / b;
   }
 
@@ -42,16 +42,16 @@ export class Calculator {
         const second = this.operands.shift();
         switch (operator) {
           case "+":
-            this.answer = this.add(this.answer, second);
+            this.answer = this._add(this.answer, second);
             break;
           case "-":
-            this.answer = this.sub(this.answer, second);
+            this.answer = this._sub(this.answer, second);
             break;
           case "*":
-            this.answer = this.mul(this.answer, second);
+            this.answer = this._mul(this.answer, second);
             break;
           case "/":
-            this.answer = this.div(this.answer, second);
+            this.answer = this._div(this.answer, second);
             break;
           default:
             break;

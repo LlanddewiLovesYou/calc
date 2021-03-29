@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Display } from "./components/Display/Display";
 import { Button } from "./components/Button/Button";
 import { DisplayContext } from "./context/DisplayContext";
-import { Calculator } from "./Calculator";
+import { Calculator } from "./util/Calculator";
 import { EqualsButton } from "./components/Button/EqualsButton";
 import "./App.css";
 
